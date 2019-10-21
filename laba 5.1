@@ -1,0 +1,35 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+
+	setlocale(0, "");
+
+	int k;
+
+	do {
+
+		cout << "Введите размер файла в байтах : " << endl;
+
+		cin >> k;
+		
+		if (k >= 0) {
+
+			cout << "Размер файла в килобайтах : " << k / 1024 << endl;
+			break;
+		}
+		else
+		{
+			cout << "Некорректные данные!" << endl;
+		}
+
+	} while (true);
+
+	cout << endl;
+
+	system("pause");
+
+	return 0;
+
+}
