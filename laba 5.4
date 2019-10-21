@@ -1,0 +1,25 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+
+	setlocale(0, "");
+
+	int a;
+
+	cout << "Введите двузначное число : " << endl;
+
+	cin >> a;
+
+	a = a % 10 * 10 + a / 10;
+
+	cout << "Ваше число : " << a << endl;
+
+	cout << endl;
+
+	system("pause");
+
+	return 0;
+
+}
